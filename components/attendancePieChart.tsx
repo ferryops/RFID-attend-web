@@ -30,7 +30,7 @@ const AttendancePieChart: React.FC<Props> = ({ attendanceLogs }) => {
       labels: ["Tepat Waktu", "Terlambat"],
       datasets: [
         {
-          label: "Kehadiran",
+          label: "Karyawan",
           data: [
             attendanceLogs.filter((log) => log.is_late === 0).length,
             attendanceLogs.filter((log) => log.is_late === 1).length,
@@ -69,7 +69,7 @@ const AttendancePieChart: React.FC<Props> = ({ attendanceLogs }) => {
   }, [attendanceLogs]);
 
   return (
-    <div className="p-0 max-h-[80vh]">
+    <div className="max-h-[50vh] flex justify-center w-full">
       <canvas ref={chartRef} id="attendancePieChart"></canvas>
     </div>
   );

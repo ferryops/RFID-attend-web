@@ -1,7 +1,7 @@
 import AttendancePieChart from "@/components/attendancePieChart";
 import { useState, useEffect } from "react";
 
-const Attendance = () => {
+const DashboardMenu = () => {
   const [attendanceLogs, setAttendanceLogs] = useState([]);
 
   useEffect(() => {
@@ -25,4 +25,4 @@ const Attendance = () => {
   );
 };
 
-export default Attendance;
+export default DashboardMenu;
