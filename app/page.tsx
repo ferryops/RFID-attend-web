@@ -55,7 +55,7 @@ export default function Home() {
   const handleCheckout = async () => {
     const checkoutData = {
       employee_id: employeeId,
-      check_in: new Date().toISOString(),
+      check_out: new Date().toISOString(),
     };
 
     try {
@@ -68,10 +68,13 @@ export default function Home() {
       });
 
       if (response.ok) {
+        const responseData = await response.json();
         console.log("Check-out successful!");
+        alert(responseData.message);
       } else {
+        const responseData = await response.json();
         console.error("Failed to check-out:", response.statusText);
-        alert(response.statusText);
+        alert(responseData.message);
       }
     } catch (error) {
       console.error("Error checking out:", error);
