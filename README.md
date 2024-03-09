@@ -2,6 +2,9 @@
 
 RFID Attendance Web adalah sebuah aplikasi web untuk melakukan absensi karyawan menggunakan teknologi RFID. Aplikasi ini dibangun menggunakan Next.js 14, TailwindCSS, dan MySQL.
 
+## Demo
+![Demo RFID Attendance Web](https://github.com/ferryops/RFID-attend-web/assets/53357609/1009cad8-390c-4280-a009-41281362f7ad)
+
 ## Fitur
 
 - Registrasi dan login karyawan
