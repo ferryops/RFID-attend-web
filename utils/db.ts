@@ -1,10 +1,10 @@
 import { createConnection } from "mysql2/promise";
 async function connectDB() {
   const connection = await createConnection({
-    host: "localhost",
+    host: process.env.NEXT_PUBLIC_HOST,
     user: process.env.NEXT_PUBLIC_USERNAME,
     password: process.env.NEXT_PUBLIC_PASSWORD,
-    database: "rfid_attendance",
+    database: process.env.NEXT_PUBLIC_DATABASE,
   });
 
   try {
